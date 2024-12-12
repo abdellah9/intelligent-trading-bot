@@ -1,4 +1,4 @@
-numpy>=1.23.*
+numpy>=1.22.2
 pandas>=1.4.*
 scikit-learn==1.2.*
 #scipy>=1.9.*  # Should be automatically installed as a dep of scikit-learn
@@ -8,7 +8,7 @@ apscheduler==3.9.*  # "conda install -c conda-forge apscheduler"
 click
 
 lightgbm>=3.3.*  # For Linux, glibc >= 2.14 is required. "conda install -c conda-forge lightgbm"
-tensorflow>=2.9.*  # pip install --upgrade tensorflow
+tensorflow>=2.12.0  # pip install --upgrade tensorflow
 #keras  # pip install --upgrade keras
 #pytorch # conda install pytorch torchvision cpuonly -c pytorch
 #fastai # pip install fastai
@@ -22,3 +22,11 @@ python-binance>=1.0.*  # pip install python-binance
 # Visualizations
 # bokeh==2.4.*
 # selenium==4.7.*  # to export pictures. note that it uses browser lib
+aiohttp>=3.10.11 # not directly required, pinned by Snyk to avoid a vulnerability
+keras>=2.13.1rc0 # not directly required, pinned by Snyk to avoid a vulnerability
+requests>=2.32.2 # not directly required, pinned by Snyk to avoid a vulnerability
+setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.2.2 # not directly required, pinned by Snyk to avoid a vulnerability
+werkzeug>=3.0.6 # not directly required, pinned by Snyk to avoid a vulnerability
+wheel>=0.38.0 # not directly required, pinned by Snyk to avoid a vulnerability
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
